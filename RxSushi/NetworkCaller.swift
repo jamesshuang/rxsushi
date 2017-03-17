@@ -22,7 +22,7 @@ class NetworkCaller {
                 return
             }
             
-            globalUserInitiatedQueue.async {
+            globalMainQueue.async {
                 let json = JSON(value)
                 let parser = JSONParser()
                 let sushi = parser.parse(sushi: json)

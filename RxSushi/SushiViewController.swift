@@ -14,16 +14,17 @@ import RxCocoa
 class SushiViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    
+   
     let viewModel = SushiViewModel()
     
     //create observable with all sushis
-    let allSushi = Observable.just(Sushi.sushi)
+    var allSushi: Observable<[Sushi]>!
     
     let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        allSushi = Observable.just(viewModel.getAllSushi())
         createCells()
         setupTapHandling()
     }

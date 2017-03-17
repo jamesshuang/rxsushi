@@ -13,10 +13,6 @@ class SushiViewModel {
     
     let sushiData = SushiDataManager()
     
-    var sushiData: [Sushi]!
-    
-    
-    
     func getAllSushi() -> [Sushi] {
         return sushiData.fetchAllSushi()
     }
@@ -37,5 +33,4 @@ class SushiViewModel {
             }
         }
     }
-    
 }
