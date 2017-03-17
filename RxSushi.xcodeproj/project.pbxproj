@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		066A8000E507F7C65CE6B9AC /* Pods_RxSushi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77A50D9B421B263EA2B580B /* Pods_RxSushi.framework */; };
+		DC6375BE1E76FFFB00CBFAE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6375BD1E76FFFB00CBFAE0 /* AppDelegate.swift */; };
+		DC6375C01E76FFFB00CBFAE0 /* SushiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6375BF1E76FFFB00CBFAE0 /* SushiViewController.swift */; };
+		DC6375C31E76FFFB00CBFAE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6375C11E76FFFB00CBFAE0 /* Main.storyboard */; };
+		DC6375C51E76FFFB00CBFAE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6375C41E76FFFB00CBFAE0 /* Assets.xcassets */; };
+		DC6375C81E76FFFB00CBFAE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6375C61E76FFFB00CBFAE0 /* LaunchScreen.storyboard */; };
+		DC6375D11E7706E400CBFAE0 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6375D01E7706E400CBFAE0 /* JSONParser.swift */; };
+		DC6375D61E770BA000CBFAE0 /* Sushi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6375D51E770BA000CBFAE0 /* Sushi.swift */; };
+		DC6375D91E784BF000CBFAE0 /* GCDUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6375D81E784BF000CBFAE0 /* GCDUtils.swift */; };
+		DC6375DB1E78528600CBFAE0 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6375DA1E78528600CBFAE0 /* NetworkRouter.swift */; };
+		DC6375DD1E7852F600CBFAE0 /* NetworkCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6375DC1E7852F600CBFAE0 /* NetworkCaller.swift */; };
+		DC6375E01E78590300CBFAE0 /* SushiDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6375DF1E78590300CBFAE0 /* SushiDataManager.swift */; };
+		DC6375E61E7881BD00CBFAE0 /* SushiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6375E51E7881BD00CBFAE0 /* SushiViewModel.swift */; };
+		DC6375E81E7996E000CBFAE0 /* SushiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6375E71E7996E000CBFAE0 /* SushiCell.swift */; };
+		DC669DF41E7B06F4008BEE72 /* SushiDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC669DF31E7B06F4008BEE72 /* SushiDetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0BF59E4597B12630607825F5 /* Pods-RxSushi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSushi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSushi/Pods-RxSushi.debug.xcconfig"; sourceTree = "<group>"; };
+		B77A50D9B421B263EA2B580B /* Pods_RxSushi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSushi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC6375BA1E76FFFB00CBFAE0 /* RxSushi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSushi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC6375BD1E76FFFB00CBFAE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC6375BF1E76FFFB00CBFAE0 /* SushiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiViewController.swift; sourceTree = "<group>"; };
+		DC6375C21E76FFFB00CBFAE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC6375C41E76FFFB00CBFAE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC6375C71E76FFFB00CBFAE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC6375C91E76FFFB00CBFAE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC6375D01E7706E400CBFAE0 /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		DC6375D51E770BA000CBFAE0 /* Sushi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sushi.swift; sourceTree = "<group>"; };
+		DC6375D81E784BF000CBFAE0 /* GCDUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDUtils.swift; sourceTree = "<group>"; };
+		DC6375DA1E78528600CBFAE0 /* NetworkRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		DC6375DC1E7852F600CBFAE0 /* NetworkCaller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkCaller.swift; sourceTree = "<group>"; };
+		DC6375DF1E78590300CBFAE0 /* SushiDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SushiDataManager.swift; sourceTree = "<group>"; };
+		DC6375E51E7881BD00CBFAE0 /* SushiViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SushiViewModel.swift; sourceTree = "<group>"; };
+		DC6375E71E7996E000CBFAE0 /* SushiCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SushiCell.swift; sourceTree = "<group>"; };
+		DC669DF31E7B06F4008BEE72 /* SushiDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SushiDetailViewController.swift; sourceTree = "<group>"; };
+		ED6B0551EB6A329836CEE54E /* Pods-RxSushi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSushi.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSushi/Pods-RxSushi.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC6375B71E76FFFB00CBFAE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				066A8000E507F7C65CE6B9AC /* Pods_RxSushi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30439ABE65C2FD179B9AF637 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B77A50D9B421B263EA2B580B /* Pods_RxSushi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE04873FD13F2B41A0FB0588 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BF59E4597B12630607825F5 /* Pods-RxSushi.debug.xcconfig */,
+				ED6B0551EB6A329836CEE54E /* Pods-RxSushi.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DC6375B11E76FFFB00CBFAE0 = {
+			isa = PBXGroup;
+			children = (
+				DC6375BC1E76FFFB00CBFAE0 /* RxSushi */,
+				DC6375BB1E76FFFB00CBFAE0 /* Products */,
+				BE04873FD13F2B41A0FB0588 /* Pods */,
+				30439ABE65C2FD179B9AF637 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DC6375BB1E76FFFB00CBFAE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC6375BA1E76FFFB00CBFAE0 /* RxSushi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC6375BC1E76FFFB00CBFAE0 /* RxSushi */ = {
+			isa = PBXGroup;
+			children = (
+				DC6375E41E78816500CBFAE0 /* ViewModel */,
+				DC6375E31E78815F00CBFAE0 /* View */,
+				DC6375D71E784BCD00CBFAE0 /* Utils */,
+				DC6375D21E770B1500CBFAE0 /* Models */,
+				DC6375CF1E7706C000CBFAE0 /* Services */,
+				DC6375BD1E76FFFB00CBFAE0 /* AppDelegate.swift */,
+				DC6375C11E76FFFB00CBFAE0 /* Main.storyboard */,
+				DC6375C41E76FFFB00CBFAE0 /* Assets.xcassets */,
+				DC6375C61E76FFFB00CBFAE0 /* LaunchScreen.storyboard */,
+				DC6375C91E76FFFB00CBFAE0 /* Info.plist */,
+			);
+			path = RxSushi;
+			sourceTree = "<group>";
+		};
+		DC6375CF1E7706C000CBFAE0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DC6375D01E7706E400CBFAE0 /* JSONParser.swift */,
+				DC6375DA1E78528600CBFAE0 /* NetworkRouter.swift */,
+				DC6375DC1E7852F600CBFAE0 /* NetworkCaller.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		DC6375D21E770B1500CBFAE0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DC6375D51E770BA000CBFAE0 /* Sushi.swift */,
+				DC6375DF1E78590300CBFAE0 /* SushiDataManager.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		DC6375D71E784BCD00CBFAE0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DC6375D81E784BF000CBFAE0 /* GCDUtils.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		DC6375E31E78815F00CBFAE0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DC6375BF1E76FFFB00CBFAE0 /* SushiViewController.swift */,
+				DC6375E71E7996E000CBFAE0 /* SushiCell.swift */,
+				DC669DF31E7B06F4008BEE72 /* SushiDetailViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		DC6375E41E78816500CBFAE0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DC6375E51E7881BD00CBFAE0 /* SushiViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC6375B91E76FFFB00CBFAE0 /* RxSushi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC6375CC1E76FFFB00CBFAE0 /* Build configuration list for PBXNativeTarget "RxSushi" */;
+			buildPhases = (
+				30A937B311F711B59E09182E /* [CP] Check Pods Manifest.lock */,
+				DC6375B61E76FFFB00CBFAE0 /* Sources */,
+				DC6375B71E76FFFB00CBFAE0 /* Frameworks */,
+				DC6375B81E76FFFB00CBFAE0 /* Resources */,
+				FA413A5A16D9F0488EA14E4F /* [CP] Embed Pods Frameworks */,
+				BC3DA0B46EF4C1F839572044 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RxSushi;
+			productName = RxSushi;
+			productReference = DC6375BA1E76FFFB00CBFAE0 /* RxSushi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC6375B21E76FFFB00CBFAE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "James Huang";
+				TargetAttributes = {
+					DC6375B91E76FFFB00CBFAE0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DC6375B51E76FFFB00CBFAE0 /* Build configuration list for PBXProject "RxSushi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC6375B11E76FFFB00CBFAE0;
+			productRefGroup = DC6375BB1E76FFFB00CBFAE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC6375B91E76FFFB00CBFAE0 /* RxSushi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC6375B81E76FFFB00CBFAE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC6375C81E76FFFB00CBFAE0 /* LaunchScreen.storyboard in Resources */,
+				DC6375C51E76FFFB00CBFAE0 /* Assets.xcassets in Resources */,
+				DC6375C31E76FFFB00CBFAE0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30A937B311F711B59E09182E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BC3DA0B46EF4C1F839572044 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxSushi/Pods-RxSushi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA413A5A16D9F0488EA14E4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxSushi/Pods-RxSushi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC6375B61E76FFFB00CBFAE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC6375DD1E7852F600CBFAE0 /* NetworkCaller.swift in Sources */,
+				DC6375C01E76FFFB00CBFAE0 /* SushiViewController.swift in Sources */,
+				DC6375E61E7881BD00CBFAE0 /* SushiViewModel.swift in Sources */,
+				DC6375E01E78590300CBFAE0 /* SushiDataManager.swift in Sources */,
+				DC669DF41E7B06F4008BEE72 /* SushiDetailViewController.swift in Sources */,
+				DC6375E81E7996E000CBFAE0 /* SushiCell.swift in Sources */,
+				DC6375BE1E76FFFB00CBFAE0 /* AppDelegate.swift in Sources */,
+				DC6375D91E784BF000CBFAE0 /* GCDUtils.swift in Sources */,
+				DC6375D61E770BA000CBFAE0 /* Sushi.swift in Sources */,
+				DC6375D11E7706E400CBFAE0 /* JSONParser.swift in Sources */,
+				DC6375DB1E78528600CBFAE0 /* NetworkRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DC6375C11E76FFFB00CBFAE0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC6375C21E76FFFB00CBFAE0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC6375C61E76FFFB00CBFAE0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC6375C71E76FFFB00CBFAE0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC6375CA1E76FFFB00CBFAE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC6375CB1E76FFFB00CBFAE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC6375CD1E76FFFB00CBFAE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BF59E4597B12630607825F5 /* Pods-RxSushi.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RxSushi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jameshuang.RxSushi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DC6375CE1E76FFFB00CBFAE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED6B0551EB6A329836CEE54E /* Pods-RxSushi.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RxSushi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jameshuang.RxSushi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC6375B51E76FFFB00CBFAE0 /* Build configuration list for PBXProject "RxSushi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC6375CA1E76FFFB00CBFAE0 /* Debug */,
+				DC6375CB1E76FFFB00CBFAE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC6375CC1E76FFFB00CBFAE0 /* Build configuration list for PBXNativeTarget "RxSushi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC6375CD1E76FFFB00CBFAE0 /* Debug */,
+				DC6375CE1E76FFFB00CBFAE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC6375B21E76FFFB00CBFAE0 /* Project object */;
+}
