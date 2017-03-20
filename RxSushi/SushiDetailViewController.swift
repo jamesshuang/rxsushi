@@ -9,15 +9,18 @@
 import Foundation
 import UIKit
 
-class SushiDetailViewController: UIViewController {
+class SushiDetailViewController: UITableViewController {
     var sushi: Sushi!
     
-    @IBOutlet weak var sushiNameLabel: UILabel!
+    @IBOutlet weak var sushiIngredientsLabel: UILabel!
     @IBOutlet weak var sushiPriceLabel: UILabel!
+    @IBOutlet weak var sushiNameLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         sushiNameLabel.text = sushi.name
-        sushiPriceLabel.text = "\(sushi.price)"
+        sushiPriceLabel.text = "$\(sushi.price)"
+        sushiIngredientsLabel.text = sushi.ingredients
+        title = "Details"
     }
 }

@@ -24,6 +24,7 @@ class SushiViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Sushi"
         allSushi = Observable.just(viewModel.getAllSushi())
         createCells()
         setupTapHandling()

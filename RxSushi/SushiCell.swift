@@ -16,7 +16,7 @@ class SushiCell: UITableViewCell {
     
     func configureSushi(sushi: Sushi) {
         sushiName.text = sushi.name
-        sushiPrice.text = "\(sushi.price)"
+        sushiPrice.text = "$\(sushi.price)"
     }
     
 }
